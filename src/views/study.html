@@ -1,21 +1,18 @@
 <!DOCTYPE html>
-
 <html lang="pt_br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proffy | Sua plataforma de estudos online</title>
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/png">
     <link rel="stylesheet" href="/styles/main.css">
-    <link rel="stylesheet" href="/styles/partials/page-study.css">
     <link rel="stylesheet" href="/styles/partials/header.css">
     <link rel="stylesheet" href="/styles/partials/forms.css">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="/styles/partials/page-study.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
 </head>
 
 <body id='page-study'>
-
     <div id='container'>
         <header class="page-header">
             <div class="top-bar-container">
@@ -28,7 +25,6 @@
             <div class="header-content">
                 <strong>Esses são os proffys disponíveis</strong>
                 <form id="search-teachers">
-
                     <div class="select-block">
                         <label for="subject">Matéria</label>
                         <select name="subject" id="subject">
@@ -38,7 +34,6 @@
                                     {{subject}}
                                 </option>
                             {% endfor %}
-
                         </select>
                     </div>
 
@@ -60,24 +55,21 @@
                     </div>
 
                     <button type="submit">Filtrar</button>
-
                 </form>
             </div>
         </header>
 
         <main>
-
             {% if proffys == "" %}
                 <p class='no-results'>Nenhum professor encontrado com a sua pesquisa</p>
             {% else %}
-
                 {% for proffy in proffys %}
-
                 <article class="teacher-item">
                     <header>
                         <img 
                             src="{{proffy.avatar}}" 
-                            alt="{{proffy.name}}">
+                            alt="{{proffy.name}}"
+                        >
                         <div>
                             <strong>{{proffy.name}}</strong>
                             <span>{{proffy.subject}}</span>
@@ -89,19 +81,19 @@
                     <footer>
                         <p>Preço/hora<strong>R$ {{proffy.cost}}</strong>
                         </p>
-                        <a href="https://api.whatsapp.com/send?l=pt_BR&phone=55{{proffy.whatsapp}} &text=Tenho interesse na sua aula de {{proffy.subject}} {{proffy.name}}" class="button" target="_blank">
+                        <a 
+                            href="https://api.whatsapp.com/send?1=pt_BR&phone=55{{proffy.whatsapp}}&text=Tenho interesse na sua aula de {{proffy.subject}} {{proffy.name}}"
+                            class="button"
+                            target="_blank"
+                        >
                             <img src="/images/icons/whatsapp.svg" alt="WhatsApp">
                             Entrar em contato
                         </a>
                     </footer>
                 </article>
-            
                 {% endfor %}
-
             {% endif %}
         </main>
-        
     </div>
-    
 </body>
 </html>

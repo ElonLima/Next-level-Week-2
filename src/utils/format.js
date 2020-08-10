@@ -22,8 +22,8 @@ const weekdays = [
 ]
 
 function getSubject(subjectNumber) {
-    const arrayPosition = +subjectNumber - 1
-    return subjects[arrayPosition]
+    const position = +subjectNumber - 1
+    return subjects[position]
 }
 
 function convertHoursToMinutes(time) {
