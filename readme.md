@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Proffy" title="Proffy" src=".github/logo.svg" />
+    <img alt="Proffy" title="Proffy" src="public\images\logo.svg" />
 </h1>
 
 <p align="center">
@@ -17,9 +17,9 @@
 
 <br>
 
-<p align="center">
+<!-- <p align="center">
   <img alt="Proffy" src=".github/proffy.png" width="100%">
-</p>
+</p> -->
 
 ## 🚀 Tecnologias
 
@@ -34,8 +34,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O Proffy é uma plataforma de estudos online que ajuda pessoas a encontrarem professores online.
 
+<p align='center'>
 <img alt="Proffy" title="Proffy" src="public\images\proffyDemo.gif"/>
-
+</p>
 ## 🔖 Layout
 
 Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/GHGS126t7WYjnPZdRKChJF/Proffy-Web). Lembrando que você precisa ter uma conta no [Figma](http://figma.com/) para acessá-lo.
