@@ -17,3 +17,4 @@ server
 .get("/give-classes", pageGiveClasses)
 .post("/save-classes", saveClasses)
 .listen(5500)
+console.log("The server 5500 is running.")
